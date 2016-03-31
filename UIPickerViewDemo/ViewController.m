@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PickerView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    PickerView *pickerView = [[PickerView alloc] initWithFrame:CGRectMake(10, 100, SCREEN_WIDTH-10*2, 400)];
+    [self.view addSubview:pickerView];
 }
 
 - (void)didReceiveMemoryWarning {
